@@ -1,0 +1,105 @@
+$twitter-blue: #1DA1F2;
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4vh auto;
+}
+
+.app-header {
+  margin-bottom: .5em;
+  border-bottom: solid 1px #ccc;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: .3em;
+  }
+}
+
+.followers-list-container {
+  width: 100%;
+}
+.card {
+  width: 16rem;
+
+  .card-img-cntr {
+    height: 254px;
+
+    img{
+      max-height: 100%;
+    }
+  }
+}
+
+.followers-list {
+  margin-top: .5rem;
+
+  .profile-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background: #FFF;
+
+    &.sortable {
+      cursor: pointer;
+    }
+  }
+
+  td {
+    vertical-align: middle;
+    padding: .7em;
+  }
+
+  &.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba($twitter-blue, .05)
+  }
+
+  &.table-hover tbody tr:hover {
+    background-color: rgba($twitter-blue, .2)
+  }
+}
+
+
+.spinner-border.text-primary {
+  width: 3rem;
+  height: 3rem;
+  border: .4em solid $twitter-blue;
+  border-right-color: transparent;
+}
+
+.emoji {
+  font-size: 1.7em;
+  margin: 0 0 .2rem;
+  display: block;
+}
+
+.main {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $twitter-blue;
+  border-color: $twitter-blue;
+}
+
+.btn-link,
+a {
+  color: $twitter-blue;
+}
+.rightCnt {
+  min-height: 100%;
+}
