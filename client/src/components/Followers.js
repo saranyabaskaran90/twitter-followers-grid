@@ -34,14 +34,20 @@ class Followers extends React.Component {
 
     return (
       <div className="followers-list-container">
-        <small>Sort by:</small>
-        <ButtonGroup size="sm" >
-          <Button variant="link" onClick={this.sortByName}>Account Name</Button>
-          <Button variant="link" onClick={this.sortByScreenName}>Screen Name</Button>
-        </ButtonGroup>
         <div className="row">
-            {this.props.users.map(user => <Follower key={user.id} followerDetails={user} />)}
+          <div className="col-12">
+            <div className="float-right">
+              <small>Sort by:</small>
+              <ButtonGroup size="sm" >
+                <Button variant="link" onClick={this.sortByName}>Account Name</Button>
+                <Button variant="link" onClick={this.sortByScreenName}>Screen Name</Button>
+              </ButtonGroup>
             </div>
+          </div>
+        </div>
+        <div className="row">
+          {this.props.users.map(user => <Follower key={user.id} followerDetails={user} />)}
+        </div>
       </div>
     );
   }

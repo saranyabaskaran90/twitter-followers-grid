@@ -18,7 +18,7 @@ function Header(props) {
               <i className="fa fa-bell-o"></i>
             </div>
             <div className="col-2">
-              <img class="rounded-circle" src={props.user.photos[0].value} alt={props.user.displayName} />
+              <img className="rounded-circle" src={props.user.photos[0].value} alt={props.user.displayName} />
             </div>
             <div className="col-9">
               <Dropdown>
